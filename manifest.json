@@ -1,0 +1,16 @@
+{
+	"name": "Notify Less",
+	"version": "0.1",
+	"description": "Enhanced Google Plus Notifications",
+	"permissions": [
+		"cookies",
+		"http://*.google.com/*",
+		"https://*.google.com/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["http://*.google.com/*", "https://*.google.com/*"],
+			"js" : ["js/jquery.min.js", "js/notify_less.js"]
+		}
+	]
+}
